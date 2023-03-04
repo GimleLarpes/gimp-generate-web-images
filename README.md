@@ -20,6 +20,9 @@ Gimp plugin to quickly generate .jpeg and .webp images of various sizes for use 
 - If desired, change compression quality and/or add a copyright notice to JPEG images.
 - Set export directory
 
+
+
+
 Exported images will have their resolution appended to the end of their filename.
 ![exported_files](https://user-images.githubusercontent.com/97182804/222878500-d3b9faaa-491d-4cb9-a26f-43c02cb8019e.png)
 
