@@ -77,7 +77,7 @@ register(
     (PF_BOOL, "res_1080", "1080:", True),
     (PF_BOOL, "res_720", "720:", True),
     (PF_BOOL, "res_480", "480:", True),
-    (PF_BOOL, "res_360", "360:", True),
+    (PF_BOOL, "res_360", "360:", False),
     (PF_SLIDER, "jpeg_quality", "JPEG Quality:", 50, (0, 100, 1)),
     (PF_SLIDER, "jpeg_smooth", "JPEG Smoothing:", 25, (0, 100, 1)),
     (PF_SLIDER, "webp_quality", "WebP Quality:", 80, (0, 100, 1)),
