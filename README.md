@@ -18,7 +18,6 @@ Gimp plugin to quickly generate .jpeg and .webp images of various sizes for use 
 
 
 
-
 - Choose image filename
 - Choose desired resolutions (resolution given is the width of the generated images)
 - If desired, change compression quality adn/or add a copyright notice to JPEG images.
