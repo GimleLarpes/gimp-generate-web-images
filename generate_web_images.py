@@ -5,6 +5,7 @@ from gimpfu import *
 import os
 
 def generate_web_images(image, drawable, filename, res_3840, res_2560, res_1920, res_1600, res_1440, res_1280, res_1080, res_720, res_480, res_360, jpeg_quality, jpeg_smooth, webp_quality, savedir, COPYRIGHT):
+    pdb.gimp_image_undo_group_start(image)
     #Aspect Ratio
     h = float(pdb.gimp_image_height(image))
     w = float(pdb.gimp_image_width(image))
@@ -38,6 +39,8 @@ def generate_web_images(image, drawable, filename, res_3840, res_2560, res_1920,
     generate_images(image, drawable, savedir, filename, w, ASPECT_RATIO, 480, res_480, jpeg_quality, jpeg_smooth, webp_quality, COPYRIGHT)
     #Create 360 images if possible
     generate_images(image, drawable, savedir, filename, w, ASPECT_RATIO, 360, res_360, jpeg_quality, jpeg_smooth, webp_quality, COPYRIGHT)
+
+    pdb.gimp_image_undo_group_end(image)
 
 
 
