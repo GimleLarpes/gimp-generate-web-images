@@ -9,7 +9,7 @@ GIMP plugin to quickly generate .jpeg and .webp images of various sizes for use 
   - LINUX: `~/.gimp/plug-ins/generate_web_images.py`
 - On Linux or MacOSX you need to set the script file to be executable. (chmod +x generate_web_images.py)
 - Restart GIMP
-- Run plugin via Image > Generate Web Images
+- Run plugin from Image > Generate Web Images
 
 # Usage
 - Open the image you want to create web-optimized versions of in GIMP
