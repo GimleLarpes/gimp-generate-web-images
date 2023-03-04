@@ -81,7 +81,7 @@ register(
     (PF_SLIDER, "jpeg_quality", "JPEG Quality:", 50, (0, 100, 1)),
     (PF_SLIDER, "jpeg_smooth", "JPEG Smoothing:", 25, (0, 100, 1)),
     (PF_SLIDER, "webp_quality", "WebP Quality:", 80, (0, 100, 1)),
-    (PF_FILE, "savedir", "Export Directory:", os.path.join(os.environ['USERPROFILE'],"Pictures")),
+    (PF_DIRNAME, "savedir", "Export Directory:", os.path.join(os.environ['USERPROFILE'],"Pictures")),
     (PF_STRING, "COPYRIGHT", "Copyright Notice:", ""),    #COPYRIGHT NOTICE (jpeg)
     ],
     [],
