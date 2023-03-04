@@ -16,7 +16,7 @@ GIMP plugin to quickly generate .jpeg and .webp images of various sizes for use 
 - Run the plugin from Image > Generate Web Images
 - ![plugin_location](https://user-images.githubusercontent.com/97182804/222878492-00aa0768-694b-4df4-8c9c-76af7a81be24.png)
 - Choose image filename
-- Choose desired resolutions (resolution given is the width of the generated images)
+- Choose desired resolutions (resolution given is the horizontal resolution of the generated images)
 - If desired, change compression quality and/or add a copyright notice to JPEG images.
 - Set export directory
 
