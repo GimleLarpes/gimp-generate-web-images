@@ -12,7 +12,7 @@ GIMP plugin to quickly generate .jpeg and .webp images of various sizes for use 
 - Run plugin via Image > Generate Web Images
 
 # Usage
-- Open the image in GIMP
+- Open the image you want to create web-optimized versions for in GIMP
 - Run the plugin from Image > Generate Web Images
 - ![plugin_location](https://user-images.githubusercontent.com/97182804/222878492-00aa0768-694b-4df4-8c9c-76af7a81be24.png)
 - Choose image filename
