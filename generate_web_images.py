@@ -48,11 +48,15 @@ def generate_web_images(image, drawable, filename, res_3840, res_2560, res_1920,
 def generate_images(image, drawable, savedir, filename, picture_width, ASPECT_RATIO, scale_width, enabled, jpeg_quality, jpeg_smooth, webp_quality, COPYRIGHT):
     #Create image if possible
     if picture_width >= scale_width and enabled:
+        if scale_width >= 1000:
+            filler_digit = ""
+        else:
+            filler_digit = "0"
         pdb.gimp_image_scale(image, scale_width, int(round(scale_width/ASPECT_RATIO)))
         #Save JPEG
-        pdb.file_jpeg_save(image, drawable, os.path.join(savedir,(filename+"-"+str(scale_width)+".jpeg")), filename+"-"+str(scale_width)+".jpeg", jpeg_quality, jpeg_smooth, 1, 1, COPYRIGHT, 1, 0, 128, 2)
+        pdb.file_jpeg_save(image, drawable, os.path.join(savedir,(filename+"-"+str(filler_digit)+str(scale_width)+".jpeg")), filename+"-"+str(filler_digit)+str(scale_width)+".jpeg", jpeg_quality, jpeg_smooth, 1, 1, COPYRIGHT, 1, 0, 128, 2)
         #Save WEBP
-        pdb.file_webp_save2(image, drawable, os.path.join(savedir,(filename+"-"+str(scale_width)+".webp")), filename+"-"+str(scale_width)+".webp", 2, 0, webp_quality, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+        pdb.file_webp_save2(image, drawable, os.path.join(savedir,(filename+"-"+str(filler_digit)+str(scale_width)+".webp")), filename+"-"+str(filler_digit)+str(scale_width)+".webp", 2, 0, webp_quality, 0.0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 #################
 
 
